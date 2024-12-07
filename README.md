@@ -20,11 +20,11 @@ Sapling Sanctuary is a 2D platformer life-simulation survival game made with Uni
 
 * GAME IS STILL WIP
 
-## Authors: Team KWASO
+## Team KWASO
 
 Bianca Natalie Labrador 
-* Instagram: [@__biancanatalie](https://www.instagram.com/__biancanatalie)
 * GitHub: [tokwanghilaw](https://github.com/tokwanghilaw)
+* Instagram: [@__biancanatalie](https://www.instagram.com/__biancanatalie)
 
 Mark Lawrence Quibot
 * GitHub: [MarkUnFound](https://github.com/MarkUnFound)
@@ -36,9 +36,6 @@ Selwyn Lao
 Inspirations
 * The Lorax
 * Terraria
-
-Fonts
-* 
 
 And special thanks to JM for helping Team KWASO out on this game ꒰ᐢ. .ᐢ꒱₊˚⊹
 Ya'll might also wanna check his profile out. We're currently developing a game called Behind the Human Facade, a group dev project for our 2D-Game Development course.
