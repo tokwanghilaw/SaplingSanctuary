@@ -6,20 +6,6 @@ A finals project for CSMC311: Software Engineering. Made by Team KWASO ⋆｡ﾟ
 
 Sapling Sanctuary is a 2D platformer life-simulation survival game made with Unity, set in a post-apocalyptic Philippines where the environment is heavily polluted and ruined. Players must find a way to survive and restore what was lost.
 
-## Getting Started
-
-### Dependencies
-
-* Minimum requirement: Windows 10
-
-### Installing
-
-* GAME IS STILL WIP
-
-### Executing program
-
-* GAME IS STILL WIP
-
 ## Team KWASO
 
 Bianca Natalie Labrador 
@@ -30,6 +16,7 @@ Mark Lawrence Quibot
 * GitHub: [MarkUnFound](https://github.com/MarkUnFound)
 
 Selwyn Lao
+* GitHub: [sel-77](https://github.com/sel-77)
 
 ## Acknowledgments
 
