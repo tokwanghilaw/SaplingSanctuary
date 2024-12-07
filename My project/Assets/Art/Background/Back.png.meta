@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a83e821e288750f459ad48bc7d467802
+guid: 214611d1ffb6efe4ea442f0b484f220c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wasteland_Mountains_2_0
+      name: Back_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 512
-        height: 151
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5c90cfb051a5f4bbddfec016acf419
-      internalID: -1222865736
+      spriteID: 2cf3d3e3d6e42034f96365dcdd955f9b
+      internalID: 230334873
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wasteland_Mountains_2_0: -1222865736
+      Back_0: 230334873
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
