@@ -1,6 +1,6 @@
 # Sapling Sanctuary (WIP)
 
-A game project for CSMC311: Software Engineering 2 finals. Made by Team KWASO (Bianca, Mark, Selwyn) <3
+A finals project for CSMC311: Software Engineering. Made by Team KWASO ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆.
 
 ## Description
 
