@@ -1,4 +1,3 @@
-using System.Collections; // Required for IEnumerator
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -15,6 +14,12 @@ public class VignetteEffect : MonoBehaviour
     private float maxIntensity = 1f;
     private float duration = 60f; // Duration in seconds
 
+    public static float currIntensity;  // Public static variable for intensity
+    private float targetIntensity;
+    private float intensityChangeSpeed;
+
+    public float timer;
+
     void Start()
     {
         // Access the Vignette effect in the Volume
@@ -22,36 +27,31 @@ public class VignetteEffect : MonoBehaviour
         {
             vignette.intensity.value = intensity;
         }
+
+        targetIntensity = intensity;  // Initial target intensity is the base intensity
+        timer = 0.2f;
     }
 
     void Update()
     {
-
-        if (!PlayerMovement.isInsideBase) //outside the base
+        if (!PlayerMovement.isInsideBase) // Outside the base
         {
-            //StopAllCoroutines();
-            StartCoroutine(ChangeVignetteIntensity(intensity, maxIntensity, duration));
+            //intensityChangeSpeed = Mathf.Abs(maxIntensity - currIntensity) / duration;
+            //targetIntensity = maxIntensity;
+            //timer = (1 / 60) * Time.deltaTime;
+            vignette.intensity.value = timer;
+            Debug.Log("Current Vignette Intensity / Outside Base: " + currIntensity);
+            currIntensity = vignette.intensity.value;
         }
-        else//inside the base
+        else // Inside the base
         {
-            StopAllCoroutines();
-            StartCoroutine(ChangeVignetteIntensity(vignette.intensity.value, intensity, 0.5f)); // Quick reset
+            //intensityChangeSpeed = Mathf.Abs(intensity - currIntensity) / 0.5f; // Quick reset
+            //targetIntensity = intensity;
+            timer = 0.2f;
+            vignette.intensity.value = intensity;
+            Debug.Log("Current Vignette Intensity / Inside Base: " + currIntensity);
+            currIntensity = vignette.intensity.value;
         }
-
-    }
-
-    private IEnumerator ChangeVignetteIntensity(float start, float end, float time)
-    {
-        float elapsed = 0f;
-
-        while (elapsed < time)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / time);
-            vignette.intensity.value = Mathf.Lerp(start, end, t);
-            yield return null;
-        }
-
-        vignette.intensity.value = end;
+        timer += (1f / 5) * Time.deltaTime;
     }
 }

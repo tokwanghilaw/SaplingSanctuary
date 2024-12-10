@@ -11,9 +11,12 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool isInsideBase;
 
+    private Vector3 defaultPos;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        defaultPos = transform.position;
     }
 
     void Update()
@@ -37,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
+
+        if(VignetteEffect.currIntensity == 1)
+        {
+            NoAir();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -68,6 +75,9 @@ public class PlayerMovement : MonoBehaviour
         if(other.CompareTag("Base")) isInsideBase = false;
     } 
 
+    void NoAir(){
+        transform.position = defaultPos;
+   }
 
 
 }
