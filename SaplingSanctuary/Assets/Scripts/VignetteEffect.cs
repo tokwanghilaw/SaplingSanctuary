@@ -26,23 +26,18 @@ public class VignetteEffect : MonoBehaviour
 
     void Update()
     {
-        // Check if the player is outside the base
-        bool currentlyOutsideBase = !baseArea.bounds.Contains(player.position);
 
-        if (currentlyOutsideBase && !isOutsideBase)
+        if (!PlayerMovement.isInsideBase) //outside the base
         {
-            // Player just left the base
-            isOutsideBase = true;
-            StopAllCoroutines();
+            //StopAllCoroutines();
             StartCoroutine(ChangeVignetteIntensity(intensity, maxIntensity, duration));
         }
-        else if (!currentlyOutsideBase && isOutsideBase)
+        else//inside the base
         {
-            // Player returned to the base
-            isOutsideBase = false;
             StopAllCoroutines();
             StartCoroutine(ChangeVignetteIntensity(vignette.intensity.value, intensity, 0.5f)); // Quick reset
         }
+
     }
 
     private IEnumerator ChangeVignetteIntensity(float start, float end, float time)

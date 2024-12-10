@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
+    public static bool isInsideBase;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -54,6 +56,17 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
+
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Base")) isInsideBase = true;
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Base")) isInsideBase = false;
+    } 
 
 
 
