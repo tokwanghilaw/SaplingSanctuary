@@ -40,7 +40,7 @@ public class VignetteEffect : MonoBehaviour
             //targetIntensity = maxIntensity;
             //timer = (1 / 60) * Time.deltaTime;
             vignette.intensity.value = timer;
-            //Debug.Log("Current Vignette Intensity / Outside Base: " + currIntensity);
+            Debug.Log("Current Vignette Intensity / Outside Base: " + currIntensity);
             currIntensity = vignette.intensity.value;
         }
         else // Inside the base
@@ -49,7 +49,7 @@ public class VignetteEffect : MonoBehaviour
             //targetIntensity = intensity;
             timer = 0.2f;
             vignette.intensity.value = intensity;
-            //Debug.Log("Current Vignette Intensity / Inside Base: " + currIntensity);
+            Debug.Log("Current Vignette Intensity / Inside Base: " + currIntensity);
             currIntensity = vignette.intensity.value;
         }
         timer += (1f / 5) * Time.deltaTime;

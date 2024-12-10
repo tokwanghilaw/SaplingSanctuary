@@ -68,11 +68,6 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Base")) isInsideBase = true;
-
-        else if (other.CompareTag("Seed"))
-        {
-            Debug.Log("Seed detected");
-        }
     }
 
     void OnTriggerExit2D(Collider2D other)
