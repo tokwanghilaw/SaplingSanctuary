@@ -231,7 +231,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -270006607
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 509296705, guid: 34193e84177b99b48bb68d0e8da36539, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -305,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   jumpForce: 20
+  saplingPrefab: {fileID: 0}
 --- !u!95 &482864074087789558
 Animator:
   serializedVersion: 5

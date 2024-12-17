@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Base
+  - Seed
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Plantable
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: 3bg
     uniqueID: 3206140061
+    locked: 0
+  - name: Tree
+    uniqueID: 3348500527
     locked: 0
   - name: Player
     uniqueID: 4024960689
