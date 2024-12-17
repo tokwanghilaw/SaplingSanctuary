@@ -84,5 +84,10 @@ public class PlayerMovement : MonoBehaviour
         transform.position = defaultPos;
    }
 
-
+    void PlantItemFromInventory()
+    {
+        // Check if the player has an item in their inventory
+        // Check if the player is standing on a plantable area
+        // If so, plant the item
+    }
 }

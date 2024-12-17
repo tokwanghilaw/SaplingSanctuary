@@ -36,17 +36,17 @@ public class VignetteEffect : MonoBehaviour
     {
         if (!PlayerMovement.isInsideBase) // Outside the base
         {
-            //intensityChangeSpeed = Mathf.Abs(maxIntensity - currIntensity) / duration;
-            //targetIntensity = maxIntensity;
-            //timer = (1 / 60) * Time.deltaTime;
+            intensityChangeSpeed = Mathf.Abs(maxIntensity - currIntensity) / duration;
+            targetIntensity = maxIntensity;
+            timer = (1 / 60) * Time.deltaTime;
             vignette.intensity.value = timer;
             //Debug.Log("Current Vignette Intensity / Outside Base: " + currIntensity);
             currIntensity = vignette.intensity.value;
         }
         else // Inside the base
         {
-            //intensityChangeSpeed = Mathf.Abs(intensity - currIntensity) / 0.5f; // Quick reset
-            //targetIntensity = intensity;
+            intensityChangeSpeed = Mathf.Abs(intensity - currIntensity) / 0.5f; // Quick reset
+            targetIntensity = intensity;
             timer = 0.2f;
             vignette.intensity.value = intensity;
             //Debug.Log("Current Vignette Intensity / Inside Base: " + currIntensity);

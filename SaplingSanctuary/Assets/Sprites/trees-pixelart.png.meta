@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 981ed3530587d354097403953320054f
-=======
-guid: 15ba3f5f9601912499caca808e976c27
->>>>>>> Stashed changes
+guid: 13ee0b149b9926549a27f27e5a0733ef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,11 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< Updated upstream
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> Stashed changes
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -50,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -111,7 +103,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: trees-pixelart_0
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 111
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4825eb4abfc1c944abb176d9496f2536
+      internalID: 686523889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trees-pixelart_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 204
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebd5d1e1abb8e0488432e899fc79f26
+      internalID: -1879829473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trees-pixelart_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 24
+        width: 96
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b322b40e26da9da458ad55997ebde26c
+      internalID: 2098683307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -122,7 +177,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trees-pixelart_0: 686523889
+      trees-pixelart_1: -1879829473
+      trees-pixelart_2: -1981919928
+      trees-pixelart_3: 2098683307
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
