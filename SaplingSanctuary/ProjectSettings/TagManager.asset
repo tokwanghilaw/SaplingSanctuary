@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Base
   - Seed
+  - Tree
   layers:
   - Default
   - TransparentFX
