@@ -10,7 +10,6 @@ Sapling Sanctuary is a 2D platformer life-simulation survival game made with Uni
 
 Bianca Natalie Labrador 
 * GitHub: [tokwanghilaw](https://github.com/tokwanghilaw)
-* Instagram: [@__biancanatalie](https://www.instagram.com/__biancanatalie)
 
 Mark Lawrence Quibot
 * GitHub: [MarkUnFound](https://github.com/MarkUnFound)
